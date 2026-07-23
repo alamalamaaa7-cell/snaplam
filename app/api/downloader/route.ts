@@ -1,6 +1,6 @@
 import { getServerSession } from 'next-auth';
-import { authOptions } from '../../../lib/auth';
-import { store } from '../../../lib/store';
+import { isAdmin } from '@/lib/auth'
+import { store } from '@/lib/store';
 
 export const dynamic = 'force-dynamic';
 
