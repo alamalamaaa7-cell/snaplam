@@ -1,6 +1,7 @@
 import { getServerSession } from 'next-auth';
 import { isAdmin } from '@/lib/auth'
-import { store } from '@/lib/store';
+import { store } from '@/lib/store'
+import { NextResponse } from 'next/server'
 
 export const dynamic = 'force-dynamic';
 
