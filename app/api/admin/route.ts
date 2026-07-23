@@ -1,6 +1,6 @@
 import { getServerSession } from "next-auth"
-import { authOptions, isAdminEmail } from "../../../../lib/auth"
-import { store } from "../../../../lib/store"
+import { isAdmin } from '@/lib/auth'
+import { store } from '@/lib/store'
 
 export async function POST(req) {
   const session = await getServerSession(authOptions)
